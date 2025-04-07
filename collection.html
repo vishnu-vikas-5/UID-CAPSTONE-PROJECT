@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>collection</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts  .gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<nav class="navbar">
+  <div class="na">
+    <img src="/logos/logo.jpg" alt="logo" width="80" height="80" class="logo" onclick="window.location.href='index.html'" style="cursor: pointer;">
+    <h3 class="name">error motors</h3>
+  </div>
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a> </li>
+      <li><a href="about%20us.html">About us</a></li>
+      <li><a href="collection.html">Collections</a> </li>
+      <li ><a href="contact%20us.html">Help</a></li>
+      <li ><a href="login.html">logout</a></li>
+
+    </ul>
+  </div>
+  <div class="navbar-toggle" onclick="menu()">
+    <i class="fas fa-bars" ></i>
+  </div>
+</nav>
+<div class="navbar-toggle-itm">
+  <p onclick="menuclose()" class="cross" style="text-align:right; cursor:pointer;">
+    <i class="fas fa-xmark"></i></p>
+  <div class="itm">
+    <p class="itm-text"><a href="index.html">Home</a></p>
+    <p class="itm-text"><a href="collection.html">Collection</a></p>
+    <p class="itm-text"><a href="contact%20us.html">Help</a></p>
+    <p class="itm-text"><a href="about%20us.html">About us</a></p>
+  </div>
+</div>
+<div class="product">
+  <form class="form-product">
+    <input type="search" name="search" id="search" placeholder="Search Product">
+    <i class="fa-solid fa-magnifying-glass" style="color:white"></i>
+  </form>
+  <br><br><hr>
+  <center>
+  <h1 style="color:white;">suggested brands</h1><br></center>
+    <div class="sug" id="sug">
+      <button class="nme" onclick="getname(event)">SUZUKI</button>
+      <button class="nme" onclick="getname(event)">MG</button>
+      <button class="nme" onclick="getname(event)">Benz</button>
+      <button class="nme" onclick="getname(event)">AUDI</button>
+      <button class="nme" onclick="getname(event)">VOLVO</button>
+    </div><br><br><hr>
+  <br>
+  <div class="car">
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/suzuki/1.png" alt="suzuki">
+      <p>SUZUKI BALENO</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/audi/Q7.webp" alt="suzuki">
+      <p>AUDI Q7</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/mg/1.jpg" alt="suzuki">
+      <p>MG HECTOR</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/suzuki/2.jpg" alt="suzuki">
+      <p>SUZUKI SWIFT</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/volvo/s90.jpeg" alt="suzuki">
+        <p>VOLVO S90</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/suzuki/3.jpg" alt="suzuki">
+      <p>SUZUKI CELERIO</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/suzuki/4.jpg" alt="suzuki">
+      <p>SUZUKI K10</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/benz/eqa.jpeg" alt="suzuki">
+      <p>MERCEDES BENZ EQA </p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/audi/q80.jpeg" alt="suzuki">
+      <p>AUDI Q8</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/volvo/xc40.jpeg" alt="suzuki">
+      <p>VOLVO XC40</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/benz/e200.jpg" alt="suzuki">
+      <p>MERCEDES BENZ E CLASS E200 </p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/suzuki/5.jpg" alt="suzuki">
+      <p>SUZUKI CIAZ</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/volvo/xc60.jpeg" alt="suzuki">
+      <p>VOLVO XC60</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/mg/2.jpg" alt="suzuki">
+      <p>MG GLOSTER</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/benz/c%20class.jpeg" alt="suzuki">
+      <p>MERCEDES BENZ C CLASS</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/suzuki/6.jpg" alt="suzuki">
+      <p>SUZUKI ERTIGA</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/audi/q8%20etron.webp" alt="suzuki">
+      <p>AUDI Q8 ETRON</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/mg/3.jpeg" alt="suzuki">
+      <p>MG ZS EV</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/benz/a%20class.jpeg" alt="suzuki">
+      <p>MERCEDES BENZ A CLASS</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/benz/bmw%20m8.jpg" alt="suzuki">
+      <p>BMW M8</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/audi/a5.jpeg" alt="suzuki">
+      <p>AUDI A5</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/volvo/xc90.jpeg" alt="suzuki">
+      <p>VOLVO XC90</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/mg/5.jpg" alt="suzuki">
+      <p>MG HECTOR PLUS</p>
+    </div>
+    <div class="carbox" onclick="redu(event)">
+      <img class="hdr" src="/logos/audi/A4.jpeg" alt="suzuki">
+      <p>AUDI A4</p>
+    </div>
+    <div id="noress">
+      <h1 id="nores"></h1>
+    </div>
+  </div>
+
+</div>
+<div class="footer">
+  &copy; 2025 Error Motors | All Rights Reserved
+</div>
+<script>
+  var search=document.getElementById("search");
+  search.addEventListener("keyup",function (){
+    var productcont=document.querySelector(".car");
+    var srchitm=productcont.querySelectorAll("div");
+    var inpu=event.target.value.toUpperCase()
+    try{
+      for(var i=0;i<srchitm.length;i++){
+        var pn=srchitm[i].querySelector('p').textContent;
+        if(pn.toUpperCase().indexOf(inpu)<0){
+          srchitm[i].style.display="none";
+        }
+        else{
+          srchitm[i].style.display="block";
+        }
+      }}
+    catch(TypeError){
+      var ss=document.getElementById("nores")
+      ss.textContent="No More Results Found";
+    }
+  })
+  function getname(event){
+    var search=document.getElementById("search");
+    search.value=event.target.textContent;
+    var pm=search.value.toUpperCase();
+    var productcont=document.querySelector(".car");
+    var search=document.getElementById("search");
+    var srchitm=productcont.querySelectorAll("div");
+    try{
+      for(var i=0;i<srchitm.length;i++){
+        var pn=srchitm[i].querySelector('p').textContent;
+        if(pn.toUpperCase().indexOf(pm)<0){
+          srchitm[i].style.display="none";
+        }
+        else{
+          srchitm[i].style.display="block";
+        }
+      }}
+    catch(TypeError){
+      var ss=document.getElementById("nores")
+      ss.textContent="No More Results Found";
+    }
+
+  }
+  function search2(event){
+    var inpu=event.target.value.toUpperCase()
+    for(var i=0;i<srchitm.length;i++){
+      var pn=srchitm[i].querySelector('p').textContent;
+      if(pn.toUpperCase().indexOf(inpu)<0){
+        srchitm[i].style.display="none";
+      }
+      else{
+        srchitm[i].style.display="block";
+      }
+    }
+  }
+  function redu(event){
+    var imgg=document.querySelectorAll("hdr");
+    var iss=document.getElementsByClassName("don");
+
+    console.log(event.target.parentElement.querySelector("p").textContent);
+    var d=event.target.src;
+    var e=event.target.parentElement.querySelector("p").textContent;
+   localStorage.setItem("vsk",d);
+   localStorage.setItem("par",e);
+   window.location.href="help.html";
+  }
+  var toggleitm=document.querySelector(".navbar-toggle-itm");
+  function menu(){
+    toggleitm.style.left="0";
+  }
+  function menuclose(){
+    toggleitm.style.left="-60%";
+  }
+</script>
+</body>
+</html>

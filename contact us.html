@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<nav class="navbar">
+    <div class="na">
+        <img src="/logos/logo.jpg" alt="logo" width="80" height="80" class="logo">
+        <h3 class="name">Error Motors</h3>
+    </div>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about%20us.html">About Us</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="contact%20us.html">Help</a></li>
+            <li ><a href="login.html">logout</a></li>
+        </ul>
+    </div>
+    <div class="navbar-toggle" onclick="menu()">
+        <i class="fas fa-bars"></i>
+    </div>
+</nav>
+<div class="navbar-toggle-itm">
+    <p onclick="menuclose()" class="cross" style="text-align:right; cursor:pointer;">
+        <i class="fas fa-xmark"></i></p>
+    <div class="itm">
+        <p class="itm-text"><a href="index.html">Home</a></p>
+        <p class="itm-text"><a href="collection.html">Collection</a></p>
+        <p class="itm-text"><a href="help.html">Help</a></p>
+        <p class="itm-text"><a href="contact.html">Contact Us</a></p>
+    </div>
+</div>
+<div class="content">
+    <h2>Contact Error Motors</h2>
+    <p>We’d love to hear from you! Whether you have a question about our collections, services, or anything else, our team is ready to answer all your inquiries.</p>
+
+    <div class="contact-form">
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" style="background-color: #2c2d32; color: white;" required></textarea>
+
+            <button type="button" onclick="sendMessage()">Send Message</button>
+        </form>
+        <p id="confirmationMessage" style="color: #ffcc00; font-size: 18px; display: none; margin-top: 15px;">Our team has received your message. We will contact you shortly.</p>
+    </div>
+
+    <div class="contact-info">
+        <h3>Our Contact Details</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 1234 Motorway Street, Auto City, TX</p>
+        <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+        <p><i class="fas fa-envelope"></i> contact@errormotors.com</p>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2025 Error Motors | All Rights Reserved
+</div>
+
+<style>
+    input{
+        background-color: #2c2d32;
+        color: white;
+    }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #1b1e26;
+        color: #e9ede6;
+        text-align: center;
+    }
+    .content {
+        padding: 50px;
+        max-width: 800px;
+        margin: auto;
+    }
+    .contact-form {
+        background: #11243b;
+        padding: 30px;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0px 0px 10px #ffcc00;
+    }
+    .contact-form label {
+        display: block;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: none;
+    }
+    .contact-form button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #ffcc00;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .contact-form button:hover {
+        background-color: #e6b800;
+    }
+    .contact-info {
+        margin-top: 40px;
+    }
+    .contact-info p {
+        font-size: 18px;
+    }
+    .footer {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #11243b;
+        font-size: 16px;
+    }
+</style>
+<script src="index.js"></script>
+</body>
+</html>

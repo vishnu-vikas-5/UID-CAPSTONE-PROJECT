@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login page</title>
+</head>
+<body>
+<div class="a1"></div>
+<div class="a2"></div>
+<div class="a3"></div>
+<div class="a4"></div>
+<div class="a5">
+  <div class="a6">
+    <center><h1>login form</h1></center>
+    <div class="a7">
+      <img src="\logos\logo.jpg">
+    </div>
+    <form>
+      <div class="usr">
+        <label>Username</label><br>
+        <input type="text" id="u1" placeholder="Enter your username"></div>
+      <br>
+      <div class="psw">
+        <label>Password</label><br>
+        <input type="password" id="p1" placeholder="Enter your password"></div>
+      <br>
+      <button onclick="login(event)">Login</button>
+      <p class="a" onclick="opens(event)">register</p>
+    </form>
+  </div>
+</div>
+<div class="a8">
+  <div class="a6">
+    <center><h1>registration form</h1></center>
+    <div class="a7">
+      <img src="\logos\logo.jpg">
+    </div>
+    <form>
+      <div class="usrs">
+        <label>Username</label><br>
+        <input type="text" id="u2" placeholder="Enter your username">
+        <br>
+        <label>Password</label><br>
+        <input type="password" id="p2" placeholder="Enter your password">
+        <label>Confirm Password</label><br>
+        <input type="password" placeholder="Enter your password">
+        <br>
+        <button class="vv" onclick="signup(event)">Signup</button>
+      </div>
+
+    </form>
+  </div>
+</div>
+</body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .a1{
+    background-color: #375251;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+  }
+  .a2{
+    position: absolute;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+    background-color: #A6BD77;
+  }
+  .a3{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 50%;
+    background-color: #A6BD77;
+  }
+  .a4{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    left: 50%;
+    top: 50%;
+    background-color: #375251;
+  }
+  .a5{
+    position: fixed;
+    background-color: #96a684;
+    height: 80%;
+    width: 40%;
+    left: 30%;
+    top: 10%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px #929f92;
+  }
+  .a6{
+    color:#243543;
+  }
+  .usrs{
+    width: 60%;
+  }
+  label{
+    margin-left: 5%;
+  }
+  input{
+    width: 170%;
+    margin-left: 5%;
+    padding: 2%;
+    background-color: transparent;
+    font-size: 20px;
+    border: 2px solid #243543;
+  }
+  .vv{
+    width: 90%;
+    margin: 10px;
+  }
+  .a7{
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    left: 30%;
+    border-radius: 50%;
+    background-color: #243543;
+  }
+  form{
+    position: absolute;
+    top: 45%;
+    font-size: 20px;
+  }
+  button{
+    width: 170%;
+    position: absolute;
+    left: 10%;
+    background-color: #669f56;
+    font-size: 20px;
+    border: 1px solid #243543;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  img{
+    position: absolute;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+  }
+  button:hover{
+    cursor: pointer;
+    background-color: red;
+  }
+  .a {
+    position: absolute;
+    right: -70%;
+    cursor: pointer;
+    bottom: -50%;
+  }
+  .a:hover{
+    text-decoration: underline;
+  }
+  .a8{
+    display: none;
+    position: fixed;
+    background-color: #96a684;
+    height: 80%;
+    width: 40%;
+    left: 30%;
+    top: 10%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px #929f92;
+  }
+</style>
+<script>
+  function opens(event) {
+    event.preventDefault();
+    var a5 = document.querySelector('.a5')
+    var a8 = document.querySelector('.a8')
+    a5.style.display = "none";
+    a8.style.display = "block";
+
+  }
+  function login(event) {
+    event.preventDefault();
+    var u1=document.getElementById("u1").value;
+    var u2 = document.getElementById("u2").value;
+    var p1 = document.getElementById("p1").value;
+    var p2 = document.getElementById("p2").value;
+
+    if(u1=="" || p1==""){
+      window.alert("Please enter details");
+    }
+    else{
+      if(u1=="admin" && p1=="root"){
+        console.log("login");
+        document.location.href = "index.html";
+      }
+      else if(u1==u2 && p1==p2){
+        window.location.href = "index.html";
+      }
+      else{
+        window.alert("Wrong credentials");
+      }
+    }
+  }
+  function signup(event) {
+    event.preventDefault();
+    var a8 = document.querySelector('.a5')
+    var a5 = document.querySelector('.a8')
+    a5.style.display = "none";
+    a8.style.display = "block";
+  }
+</script>
+</html>

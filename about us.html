@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>about us</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<nav class="navbar">
+  <div class="na">
+    <img src="/logos/logo.jpg" alt="logo" width="80" height="80" class="logo">
+    <h3 class="name">error motors</h3>
+  </div>
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a> </li>
+      <li><a href="about%20us.html">About us</a></li>
+      <li><a href="collection.html">Collections</a> </li>
+      <li ><a href="contact%20us.html">Help</a></li>
+      <li ><a href="login.html">logout</a></li>
+    </ul>
+  </div>
+  <div class="navbar-toggle" onclick="menu()">
+    <i class="fas fa-bars" ></i>
+  </div>
+</nav>
+<div class="navbar-toggle-itm">
+  <p onclick="menuclose()" class="cross" style="text-align:right; cursor:pointer;">
+    <i class="fas fa-xmark"></i></p>
+  <div class="itm">
+    <p class="itm-text"><a href="index.html">Home</a></p>
+    <p class="itm-text"><a href="collection.html">Collection</a></p>
+    <p class="itm-text"><a href="contact%20us.html">Help</a></p>
+    <p class="itm-text"><a href="about%20us.html">About us</a></p>
+  </div>
+</div>
+<div class="content">
+  <h2>About Error Motors</h2>
+  <p>
+    Welcome to Error Motors, where passion for classic and custom cars drives everything we do.
+    Our journey started with a love for unique automobiles, and today we are a dedicated team
+    committed to delivering high-quality automotive products and experiences.
+  </p>
+  <p>
+    Whether you're a collector, an enthusiast, or just someone who appreciates the beauty of cars,
+    we bring you the best selections and services. Join us in celebrating the spirit of motoring.
+  </p>
+  <div class="gallery">
+    <img src="/logos/mg/2.jpg" alt="Classic Car">
+    <img src="/logos/audi/q80.jpeg" alt="Modified Sports Car">
+    <img src="/logos/volvo/xc40.jpeg" alt="Luxury Vehicle">
+  </div>
+
+
+  <div class="mission">
+    <h3>Our Mission</h3>
+    <p>
+      At Error Motors, we strive to provide the best in automotive culture, from rare classic models to
+      cutting-edge custom modifications. Our goal is to connect car lovers and collectors with the finest
+      vehicles available.
+    </p>
+  </div>
+</div>
+
+<div class="footer">
+  &copy; 2025 Error Motors | All Rights Reserved
+</div>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b1e26;
+    color: #e9ede6;
+    text-align: center;
+  }
+.content {
+padding: 50px;
+max-width: 800px;
+margin: auto;
+}
+.content h2 {
+font-size: 36px;
+}
+.content p {
+font-size: 18px;
+line-height: 1.6;
+}
+.gallery {
+display: flex;
+justify-content: center;
+gap: 15px;
+flex-wrap: wrap;
+margin-top: 30px;
+}
+.gallery img {
+width: 250px;
+height: 150px;
+object-fit: cover;
+border-radius: 8px;
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.gallery img:hover {
+transform: scale(1.1);
+box-shadow: 0px 0px 10px #ffcc00;
+}
+.mission {
+background-color: #11243b;
+padding: 40px;
+margin-top: 40px;
+border-radius: 10px;
+}
+.mission h3 {
+font-size: 28px;
+color: #ffcc00;
+}
+.footer {
+margin-top: 40px;
+padding: 20px;
+background-color: #11243b;
+font-size: 16px;
+}
+</style>
+<script src="index.js"></script>
+</body>
+</html>

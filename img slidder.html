@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dsfij</title>
+</head>
+<body>
+<div id="slider">
+  <img id="1" src="/logos/logo.jpg" alt="">
+  <img id="2" src="/logos/logo1.jpeg" alt="" style="display: none;">
+</div>
+<button onclick="slideleft(event)">&#10094</button>
+<button>&#10095</button>
+<script>
+  var slider = document.getElementById('slider');
+  img = document.createElement('img');
+  imgs=[img];
+  function slideleft(event){
+    event.preventDefault();
+  }
+</script>
+</body>
+</html>
